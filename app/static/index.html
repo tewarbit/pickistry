@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Welcome to the Pickistry!</title>
+    <script type="text/javascript" src="js/simpleajax.js"></script>
+    <script type="text/javascript" src="js/handling.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+  </head>
+  <body>
+    <div style="height:100%; width:100%;">
+      <img src="images/pickistry.png" style="padding:5px" />
+      <div class="form">
+
+        <p class="name">
+          <input type="text" name="email" id="email_1" />
+          <label for="email_1">Email #1</label>
+        </p>
+        <p class="name">
+          <input type="text" name="email" id="email_2" />
+          <label for="email_2">Email #2</label>
+        </p>
+        <p class="name">
+          <input type="text" name="email" id="email_3" />
+          <label for="email_3">Email #3</label>
+        </p>
+
+        <p class="submit">
+          <button onclick="myFunction()">Initiate</button>
+        </p>
+
+        <!--p class="responsearea">
+          <textarea name="response" id="response"></textarea>
+          <label for="response">Response</label>
+        </p-->
+        <br/>
+        <label for="response">Response:</label>
+        <div id='putresponse' class="responsebox">
+          <!--img src="images/loading.gif"/-->
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>      

@@ -1,0 +1,19 @@
+application: pickistry
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /app/static
+  static_dir: app/static
+
+- url: /_ah/mail/.+
+  script: handle_incoming_email.app
+  login: admin
+
+- url: /.*
+  script: pickistry.application
+
+inbound_services:
+- mail
